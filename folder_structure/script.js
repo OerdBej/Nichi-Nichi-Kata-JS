@@ -27,4 +27,12 @@ parentFolder.addEventListener('click', () => {
 });
 
 //item is just the explored data input
-function createItemInput(item, parentContainer, type, isFirstLevel) {}
+function createItemInput(item, parentContainer, type, isFirstLevel) {
+  //input of the buttons
+  const itemInput = document.createElement('');
+  input.type = 'text';
+  input.placeholder = type == 'file' ? 'file name ' : 'Folder name';
+
+  const addButton = document.createElement('button');
+  addButton.textContent = type === 'file' ? 'Add File' : 'Add Folder';
+}
